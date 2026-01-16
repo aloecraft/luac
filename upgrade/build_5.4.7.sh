@@ -1,4 +1,6 @@
 #! /bin/bash
+rm -rf .temp .build
+
 mkdir -p .temp
 mkdir -p .build
 mkdir -p .dist
@@ -19,6 +21,3 @@ cp .temp/lua-5.4.7/src/luac.c .build
 
 chmod +x .dist/v5.4.7/luac
 chmod +x .dist/v5.4.7/lua
-
-# Clean
-# mkdir -rf .temp .build .dist
